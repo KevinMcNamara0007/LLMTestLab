@@ -111,7 +111,7 @@ async def call_openai_api_v1(clean, fileToWriteTo):
     ## target openai rest interface
     url = "https://api.example.com/v1/data"
     ##openai.api_key = os.getenv("OPENAI_API_KEY")
-    openai.api_key = "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"
+    openai.api_key = "sk-29Am2fsfdsfsfdfdsfdsfdsfdsfn97F4T3BlbkFJGkqhfULDtG6iO9WlJ2Mr"
     ## loop through rows and write results to file
     for row in clean:
         recordLine +=1
@@ -123,7 +123,7 @@ async def call_openai_api_v1(clean, fileToWriteTo):
 
 async def call_openai_api_v1_protected_concurrent_threads(clean, fileToWriteTo):
     url = "https://api.example.com/v1/data"
-    openai.api_key = "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"
+    openai.api_key = "sk-hfghfghghfghgfhgghgfhghghghJGkqhfULDtG6iO9WlJ2Mr"
 
     # Define semaphore to limit the number of concurrent tasks
     semaphore = asyncio.Semaphore(5)
@@ -149,7 +149,7 @@ async def call_openai_api_v1_protected_concurrent_threads(clean, fileToWriteTo):
 
 async def call_openai_api_v1_protected_concurrent_threads_with_retry(numberSemiphores, maxRetries, clean, fileToWriteTo):
     url = "https://api.example.com/v1/data"
-    openai.api_key = "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"
+    openai.api_key = "sk-29Am245049584095840958495043590340543JGkqhfULDtG6iO9WlJ2Mr"
     max_retries = maxRetries  # Set maximum number of retries
 
     # Define semaphore to limit the number of concurrent tasks
